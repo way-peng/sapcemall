@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/light_gray" >
+
+    <include
+        android:id="@+id/my_register_title"
+        layout="@layout/title" />
+
+    <ScrollView
+        android:id="@+id/regist_scroller"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/my_register_title" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="10.0dip" >
+
+            <!-- 用户名 -->
+
+            <TextView
+                android:id="@+id/register_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15.0dip"
+                android:paddingTop="10.0dip"
+                android:text="用户名：" />
+
+            <EditText
+                android:id="@+id/register_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/register_name_text"
+                android:layout_toRightOf="@id/register_name_text"
+                android:background="@drawable/edit_text_x"
+                android:hint="请输入用户名"
+                android:singleLine="true" />
+            <!-- 邮箱 -->
+
+            <TextView
+                android:id="@+id/register_mail_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_name_text"
+                android:layout_margin="15.0dip"
+                android:paddingTop="10.0dip"
+                android:text="邮箱：" />
+
+            <EditText
+                android:id="@+id/register_mail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/register_name"
+                android:layout_alignTop="@id/register_mail_text"
+                android:layout_below="@id/register_name"
+                android:layout_toRightOf="@id/register_mail_text"
+                android:background="@drawable/edit_text_x"
+                android:hint="请输入邮箱"
+                android:singleLine="true" />
+            <!-- 密码： -->
+
+            <TextView
+                android:id="@+id/register_first_password_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_mail_text"
+                android:layout_margin="15.0dip"
+                android:paddingTop="10.0dip"
+                android:text="密码：" />
+
+            <EditText
+                android:id="@+id/register_first_password_hint"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/register_name"
+                android:layout_alignTop="@id/register_first_password_text"
+                android:layout_below="@id/register_mail"
+                android:layout_toRightOf="@id/register_first_password_text"
+                android:background="@drawable/edit_text_x"
+                android:hint="请输入密码"
+                android:password="true"
+                android:singleLine="true" />
+            <!-- 确认密码 -->
+
+            <TextView
+                android:id="@+id/register_second_password_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_first_password_text"
+                android:layout_margin="15.0dip"
+                android:paddingTop="10.0dip"
+                android:text="确认密码：" />
+
+            <EditText
+                android:id="@+id/register_second_password_hint"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/register_name"
+                android:layout_alignTop="@id/register_second_password_text"
+                android:layout_below="@id/register_first_password_hint"
+                android:layout_toRightOf="@id/register_second_password_text"
+                android:background="@drawable/edit_text_x"
+                android:hint="请确认密码"
+                android:password="true"
+                android:singleLine="true" />
+            <!-- 显示密码 -->
+
+            <CheckBox
+                android:id="@+id/show_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/register_name"
+                android:layout_below="@id/register_second_password_hint"
+                android:layout_marginTop="10.0dip"
+                android:button="@drawable/login_remember"
+                android:text="显示密码" />
+
+            <CheckBox
+                android:id="@+id/accept_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/register_name"
+                android:layout_below="@id/show_password"
+                android:layout_marginTop="10.0dip"
+                android:button="@drawable/login_remember"
+                android:checked="true"
+                android:text="同意，" />
+
+            <TextView
+                android:id="@+id/show_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/show_password"
+                android:layout_marginTop="17.0dip"
+                android:layout_toRightOf="@id/accept_agreement"
+                android:text="注册协议"
+                android:textSize="16.0dip"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/register_top"
+                style="@style/button"
+                android:layout_width="150.0dip"
+                android:layout_alignLeft="@id/register_name"
+                android:layout_below="@id/accept_agreement"
+                android:layout_marginTop="10.0dip"
+                android:adjustViewBounds="true"
+                android:text="注册"
+                android:textSize="20.0sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

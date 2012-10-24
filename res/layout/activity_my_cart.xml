@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical" >
+
+    <!-- 我的购物车 -->
+
+    <include
+        android:id="@+id/my_cart_title"
+        layout="@layout/title" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="6.0dip"
+        android:paddingRight="6.0dip" >
+
+        <ListView
+            android:id="@+id/my_cart_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:divider="#ffcccccc"
+            android:dividerHeight="1.0dip"
+            android:fadeScrollbars="true" />
+
+        <View
+            android:id="@+id/comment_list_item_line"
+            style="@style/line"
+            android:layout_below="@id/my_cart_list"
+            android:layout_marginTop="2.0dip"
+            android:visibility="visible" />
+
+        <!--
+             <Button
+            android:id="@+id/add_new_addr"
+            style="@style/button"
+            android:layout_width="150.0dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/comment_list_item_line"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center"
+            android:text="添加新地址" />
+        -->
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="13.0sp" />
+
+        <TextView
+            android:id="@+id/sum"
+            android:textColor="@color/red"
+            android:textSize="13.0sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/topay"
+        style="@style/button"
+        android:layout_width="150.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center"
+        android:text="去结算" />
+
+</LinearLayout>

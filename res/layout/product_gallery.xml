@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="1.0dip" >
+
+    <!-- 商品图片相册 -->
+
+    <View style="@style/line" />
+
+    <RelativeLayout
+        android:id="@+id/product_body"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_corners_bottom_corner"
+        android:minHeight="105.0dip" >
+
+        <!-- 左箭头 -->
+
+        <ImageView
+            android:id="@+id/product_gallery_left_arrow"
+            android:layout_width="13.0dip"
+            android:layout_height="13.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginTop="40.0dip"
+            android:src="@drawable/list_idex_left" />
+
+        <!-- 右箭头 -->
+
+        <ImageView
+            android:id="@+id/product_gallery_right_arrow"
+            android:layout_width="13.0dip"
+            android:layout_height="13.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="40.0dip"
+            android:src="@drawable/list_idex_right" />
+        <!-- 相片 -->
+
+        <Gallery
+            android:id="@+id/product_gallery"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dip"
+            android:layout_marginRight="2.0dip"
+            android:layout_toLeftOf="@id/product_gallery_right_arrow"
+            android:layout_toRightOf="@id/product_gallery_left_arrow"
+            android:background="#ffffffff"
+            android:drawingCacheQuality="high"
+            android:gravity="left"
+            android:spacing="4.0dip"
+            android:unselectedAlpha="1.0" />
+    </RelativeLayout>
+
+</LinearLayout>

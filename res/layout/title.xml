@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50.0dip"
+    android:background="@drawable/title_background"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <!-- 返回 -->
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="50.0dip"
+        android:layout_height="fill_parent"
+        android:background="@color/full_transparent"
+        android:gravity="center"
+        android:src="@drawable/btn_bar_back" />
+
+    <!-- 分割线 -->
+
+    <ImageView
+        style="@style/view_cutline"
+        android:src="@drawable/widget_bar_cut_off"
+        android:visibility="gone" />
+    <!-- 标题栏 -->
+
+    <TextView
+        android:id="@+id/titleText"
+        style="@style/title_text" />
+    <!-- 分割线 -->
+
+    <ImageView
+        style="@style/view_cutline"
+        android:src="@drawable/widget_bar_cut_off"
+        android:visibility="gone" />
+    <!-- 操作按钮 -->
+
+    <Button
+        android:id="@+id/titleRightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <!-- android:visibility="gone" -->
+
+</LinearLayout>

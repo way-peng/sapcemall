@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical" >
+
+    <!-- 已付款订单 -->
+
+    <include
+        android:id="@+id/my_order_payment_list_title"
+        layout="@layout/title" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="6.0dip"
+        android:paddingRight="6.0dip" >
+
+        <ListView
+            android:id="@+id/my_order_payment_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:divider="#ffcccccc"
+            android:dividerHeight="1.0dip"
+            android:fadeScrollbars="true" />
+
+        <View
+            android:id="@+id/comment_list_item_line"
+            style="@style/line"
+            android:layout_below="@id/my_collect_list"
+            android:layout_marginTop="2.0dip"
+            android:visibility="visible" />
+
+       
+
+    </RelativeLayout>
+
+</LinearLayout>

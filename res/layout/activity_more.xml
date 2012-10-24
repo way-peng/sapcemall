@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/light_gray" >
+
+    <include
+        android:id="@+id/more_title"
+        layout="@layout/title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/more_title"
+        android:fadeScrollbars="true"
+        android:paddingBottom="7.0dip"
+        android:paddingTop="7.0dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="7.0dip"
+            android:layout_marginRight="7.0dip"
+            android:background="@drawable/background_corners"
+            android:orientation="vertical"
+            android:padding="1.0dip" >
+
+            <View style="@style/line" />
+            <!-- history -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/more_activity_item_selector_no_corners"
+                android:minHeight="50.0dip"
+                android:paddingBottom="14.0dip"
+                android:paddingLeft="14.0dip"
+                android:paddingRight="12.0dip"
+                android:paddingTop="14.0dip" >
+
+                <ImageView
+                    android:id="@+id/more_history_icon"
+                    android:layout_width="23.0dip"
+                    android:layout_height="23.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/more_history" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/more_history_icon"
+                    android:ellipsize="end"
+                    android:paddingLeft="15.0dip"
+                    android:singleLine="true"
+                    android:text="浏览记录"
+                    android:textColor="@color/black"
+                    android:textSize="16.0dip" />
+
+                <ImageView
+                    android:id="@+id/more_jd_history_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/list_idex_right" />
+            </RelativeLayout>
+
+            <View style="@style/line" />
+            <!-- setup -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/more_activity_item_selector_no_corners"
+                android:minHeight="50.0dip"
+                android:paddingBottom="14.0dip"
+                android:paddingLeft="14.0dip"
+                android:paddingRight="12.0dip"
+                android:paddingTop="14.0dip" >
+
+                <ImageView
+                    android:id="@+id/more_setting_icon"
+                    android:layout_width="23.0dip"
+                    android:layout_height="23.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/more_setup" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/more_setting_icon"
+                    android:ellipsize="end"
+                    android:paddingLeft="15.0dip"
+                    android:singleLine="true"
+                    android:text="设置"
+                    android:textColor="@color/black"
+                    android:textSize="16.0dip" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/list_idex_right" />
+            </RelativeLayout>
+
+            <View style="@style/line" />
+            <!-- help -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/more_activity_item_selector_no_corners"
+                android:minHeight="50.0dip"
+                android:paddingBottom="14.0dip"
+                android:paddingLeft="14.0dip"
+                android:paddingRight="12.0dip"
+                android:paddingTop="14.0dip" >
+
+                <ImageView
+                    android:id="@+id/more_help_icon"
+                    android:layout_width="23.0dip"
+                    android:layout_height="23.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/more_help" />
+
+                <TextView
+                    android:id="@+id/more_jd_help_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/more_help_icon"
+                    android:ellipsize="end"
+                    android:paddingLeft="15.0dip"
+                    android:singleLine="true"
+                    android:text="帮助"
+                    android:textColor="@color/black"
+                    android:textSize="16.0dip" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/list_idex_right" />
+            </RelativeLayout>
+
+            <View style="@style/line" />
+            <!-- feedback -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/more_activity_item_selector_no_corners"
+                android:minHeight="50.0dip"
+                android:paddingBottom="14.0dip"
+                android:paddingLeft="14.0dip"
+                android:paddingRight="12.0dip"
+                android:paddingTop="14.0dip" >
+
+                <ImageView
+                    android:id="@+id/more_feedback_icon"
+                    android:layout_width="23.0dip"
+                    android:layout_height="23.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/more_feedback" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/more_feedback_icon"
+                    android:ellipsize="end"
+                    android:paddingLeft="15.0dip"
+                    android:singleLine="true"
+                    android:text="意见反馈"
+                    android:textColor="@color/black"
+                    android:textSize="16.0dip" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/list_idex_right" />
+            </RelativeLayout>
+
+            <View style="@style/line" />
+            <!-- about -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/more_activity_item_selector_no_corners"
+                android:minHeight="50.0dip"
+                android:paddingBottom="14.0dip"
+                android:paddingLeft="14.0dip"
+                android:paddingRight="12.0dip"
+                android:paddingTop="14.0dip" >
+
+                <ImageView
+                    android:id="@+id/more_about_icon"
+                    android:layout_width="23.0dip"
+                    android:layout_height="23.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/more_about" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/more_about_icon"
+                    android:ellipsize="end"
+                    android:paddingLeft="15.0dip"
+                    android:singleLine="true"
+                    android:text="关于"
+                    android:textColor="@color/black"
+                    android:textSize="16.0dip" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/list_idex_right" />
+            </RelativeLayout>
+
+            <View style="@style/line" />
+
+            <!-- version -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/more_activity_item_selector_no_corners"
+                android:minHeight="50.0dip"
+                android:paddingBottom="14.0dip"
+                android:paddingLeft="14.0dip"
+                android:paddingRight="12.0dip"
+                android:paddingTop="14.0dip" >
+
+                <ImageView
+                    android:id="@+id/more_version_icon"
+                    android:layout_width="23.0dip"
+                    android:layout_height="23.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/more_version" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/more_version_icon"
+                    android:ellipsize="end"
+                    android:paddingLeft="15.0dip"
+                    android:singleLine="true"
+                    android:text="检测更新"
+                    android:textColor="@color/black"
+                    android:textSize="16.0dip" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/list_idex_right" />
+            </RelativeLayout>
+
+            <View style="@style/line" />
+            <!-- exit -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/more_activity_item_selector_bottom_corners"
+                android:minHeight="50.0dip"
+                android:paddingBottom="14.0dip"
+                android:paddingLeft="14.0dip"
+                android:paddingRight="12.0dip"
+                android:paddingTop="14.0dip" >
+
+                <ImageView
+                    android:id="@+id/more_exit_icon"
+                    android:layout_width="23.0dip"
+                    android:layout_height="23.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/more_exit" />
+
+                <TextView
+                    android:id="@+id/more_jd_exit_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/more_exit_icon"
+                    android:ellipsize="end"
+                    android:paddingLeft="15.0dip"
+                    android:singleLine="true"
+                    android:text="退出"
+                    android:textColor="@color/black"
+                    android:textSize="16.0dip" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/list_idex_right" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

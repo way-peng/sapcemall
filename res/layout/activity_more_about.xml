@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/light_gray" >
+
+    <include
+        android:id="@+id/more_about_title"
+        layout="@layout/title" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/more_about_title"
+        android:layout_margin="10.0dip"
+        android:background="@drawable/background_corners" >
+
+        <!-- logo -->
+
+        <ImageView
+            android:id="@+id/company_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60.0dip"
+            android:padding="10.0dip"
+            android:src="@drawable/more_about_companylogo" />
+        <!-- name -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/company_log"
+            android:layout_marginTop="30.0dip"
+            android:gravity="center"
+            android:text="航天商城"
+            android:textColor="#ff000000"
+            android:textSize="28.0dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/product_copy_right"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10.0dip"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="10.0dip"
+            android:text="Copyright ©2004-2012 spacemall 
+ 航天商城版权所有"
+            android:textSize="15.0dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/more_about_version"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/product_copy_right"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center" />
+    </RelativeLayout>
+
+</RelativeLayout>
